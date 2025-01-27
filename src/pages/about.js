@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import SpeakerInvestor from "@/components/NewPartners";
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export async function getServerSideProps({ locale }) {
@@ -9,10 +9,15 @@ export async function getServerSideProps({ locale }) {
     }
   }
 }
-export default function Home() {
+
+const About = () => {
+  const { t } = useTranslation();
+  
   return (
     <Layout>
-      <SpeakerInvestor />
+      <h1>{t('country')}</h1>
     </Layout>
   )
 }
+
+export default About

@@ -2,17 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer utilities {
+  .animation-pause {
+    animation-play-state: paused;
+  }
+} */
+ 
+.mask, .normal {
+  
+}
+
+.mask {
+
+}
+
+.normal {
+
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
