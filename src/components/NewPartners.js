@@ -67,3 +67,5 @@ const NewPartners = () => {
 };
 
 export default NewPartners;
+
+// test
